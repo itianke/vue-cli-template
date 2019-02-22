@@ -1,0 +1,40 @@
+@import "src/style/base/variables";
+
+.right {
+    float: right;
+    font-size: $font-size-small;
+}
+.footer-content {
+    padding: 24px 0;
+    width: 65%;
+    margin: 0 auto;
+    .flex-between {
+        justify-content: space-between;
+    }
+    .flex-end {
+        margin-top: 16px;
+        justify-content: flex-end;
+    }
+    .footer-items {
+        display: flex;
+        .footer-row {
+            list-style: none;
+            li {
+                float: left;
+                font-size: $font-size-base;
+                color: #FFF;
+                height: 12px;
+                line-height: 12px;
+                padding-right: 16px;
+                &:not(.noline) {
+                    margin-right: 16px;
+                    border-right: 1px solid #FFF;
+                }
+                &:last-child {
+                    margin-right: 0;
+                    border-right: 0;
+                }
+            }
+        }
+    }
+}

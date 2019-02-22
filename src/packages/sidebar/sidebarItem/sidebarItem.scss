@@ -1,0 +1,27 @@
+@import "src/style/base/variables";
+
+.el-menu {
+    .is-active {
+        background: #E4F1FF !important;
+    }
+    .el-menu-item {
+        &:hover:not(.is-active) {
+            color: #4682F2!important;
+            background: #fff!important;
+                
+        }
+        &.is-active {
+            &::before {
+                position: absolute;
+                content: "";
+                right: 0;
+                top: 0;
+                bottom: 0;
+                width: 4px;
+                background: #4682F2;
+            }
+        }
+    }
+    
+}
+

@@ -1,5 +1,6 @@
 <template>
   <div class="about-page">
+    <footer-bar></footer-bar>
      this is about page.
   </div>
 </template>

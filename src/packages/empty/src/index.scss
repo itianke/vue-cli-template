@@ -1,0 +1,43 @@
+@import "src/style/base/variables";
+
+.large-tips-layout {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    .layout-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 192px;
+        }
+    }
+    .layout-option {
+        margin-top: 20px;
+        .el-button {
+            width: 240px;
+            height: 48px;
+        }
+    }
+    .layout-tips {
+        max-width: 300px;
+        margin-left: 24px;
+        display: flex;
+        flex-flow: row wrap;
+        line-height:36px;
+        text-align: left;
+        span {
+            width: 100%;
+            display: inline-block;
+        }
+        .large {
+            font-size: 24px;
+            color: rgba(0,0,0,0.6);
+        }
+        .small {
+            font-size: $font-size-base;
+            color: rgba(0,0,0,0.38);
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import "src/style/base/variables";
+
+.el-menu-item-module {
+    user-select: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.60);
+    width: 336px;
+    margin-right: 30px;
+    .el-module-name {
+        display: inline-block;  
+        max-width: 245px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &:hover {
+        color: rgba(0,0,0,0.60);
+    } 
+    img {
+        width: 40px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .el-icon-arrow-down {
+        // float: right;
+        line-height: 56px;
+    }
+    .drop-down-module {
+        margin-left: 8px;
+        margin-top: 4px;
+        box-shadow: 0px 1px 10px -4px rgba(20,18,18,0.38);
+        width: inherit;
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        z-index: 1888;
+        color: rgba(0,0,0,0.6);
+        background-color: #fff;
+        li {
+            padding-left: 16px;
+            border-bottom: 1px solid #ebeef5;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &:hover:not(.active) {
+                color: rgba(0,0,0,0.6);
+                background: rgba(0,0,0,0.04);
+            }
+            img {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+.el-menu-content{
+    z-index: 1888;
+    box-shadow:  0 3px 4px 0 rgba(20,18,18,0.07), 0 3px 3px -2px rgba(20,18,18,0.07), 0 1px 8px 0 rgba(20,18,18,0.10);
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+.el-menu-item-action {
+    font-weight: bold;
+    width: 128px;
+    text-align: center;
+    color: rgba(0,0,0,0.60);
+}
+
+.el-menu-item {
+    height: 54px;
+    line-height: 54px;
+}
+.el-menu-item:hover {
+    background: #fff;
+}
+
+.el-menu--horizontal > a > .el-menu-item.is-active {
+    border-bottom: 4px solid #E84133;
+    color: #E84133;
+}
+
+.el-menu.el-menu--horizontal {
+    border: 0;
+}
+
+.arrow-enter-active {
+    transform: translateY(-90px);
+}
+
+.arrow-rotate-start {
+    transition: .2s;
+    transform: rotate(180deg);
+}
+.arrow-rotate-end {
+    transition: .3s;
+    transform: rotate(0deg);
+}
+.message-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    .el-button {
+        color: #E84133;
+        border-color: #E84133;
+    }
+}
+.active {
+    background: #F2594F;
+    color: #fff;
+}
+.add-margin {
+    padding-left: 75px;
+}

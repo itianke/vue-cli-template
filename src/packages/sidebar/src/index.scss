@@ -1,0 +1,36 @@
+@import "src/style/base/variables";
+
+.el-menu {
+    border-right: 0;
+    width: 100%;
+    overflow: auto;
+    height: calc(100vh - 112px);
+}
+
+.systemName {
+    height: 56px;
+    line-height: 56px;
+    background: #FFF;
+    font-size: $font-size-title;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+    border-bottom: 1px solid rgba(0,0,0,0.16);
+    span {
+        margin-left: 16px;
+    }
+}
+
+.el-menu::-webkit-scrollbar {
+    width: 10px;
+}
+
+.el-menu::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.el-menu::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #BDBDBD;
+}
+

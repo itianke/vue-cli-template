@@ -1,20 +1,28 @@
 <template>
   <div class="app-wrapper">
-      <header-bar></header-bar>
-      <main-content class="main-content">
-          <router-view></router-view>
-      </main-content>
+      <el-container>
+        <el-header>
+            <header-bar>
+            </header-bar>
+        </el-header>
+        <el-container class="app-wrapper">
+            <el-aside>
+                <app-nav></app-nav>
+            </el-aside>
+            <el-main class="el-main-container">
+                <main-container sysName="账户中心"></main-container>
+            </el-main>
+        </el-container>
+    </el-container>
   </div>
 </template>
 
 <script>
 /* eslint-disable */ 
-import mainContent from '../page/home.vue'
-import headerBar from './header-bar.vue'
+import mainContent from '../../page/home.vue'
 export default {
   name: 'layout',
   components: {
-    headerBar,
     mainContent
   },
   data () {

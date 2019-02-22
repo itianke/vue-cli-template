@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>Icon -控制中心</title>
+  <g id="复杂大型图标">
+    <path class="cls-1" d="M15,9h2V7h4V5H17V3H15Zm6,4V11H11v2ZM7,9v2H3v2H7v2H9V9Zm6,12V19h8V17H13V15H11v6ZM3,5V7H13V5ZM3,17v2H9V17Z"/>
+  </g>
+</svg>

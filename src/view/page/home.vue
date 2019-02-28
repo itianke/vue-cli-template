@@ -4,6 +4,7 @@
     <br>
     <router-link to="about">about</router-link>
     <router-link to="product">product</router-link>
+    <router-view/>
   </div>
 </template>
 

@@ -13,6 +13,7 @@ export default new Router({
     {
       path: '/',
       name: 'Layout',
+      redirect: '/about',
       component: Layout,
       children: [
         {

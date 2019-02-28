@@ -1,6 +1,6 @@
 <template>
   <div class="about-page">
-     this is about page.
+     {{ msg }}
   </div>
 </template>
 

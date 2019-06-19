@@ -13,9 +13,14 @@ export default new Router({
     {
       path: '/',
       name: 'Layout',
-      redirect: '/about',
+      redirect: '/Home',
       component: Layout,
       children: [
+        {
+          path: 'home',
+          name: 'Home',
+          component: Home
+        },
         {
           path: 'about',
           name: 'About',
